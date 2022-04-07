@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #d8dcb1;
+    background-image: url(../img/fondo-caballo-fuego.gif);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    }
+}
+
+.menu {
+    list-style: none;
+    background: transparent;
+    width: 90%;
+    max-width: 800px;
+    margin: 15px;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+    text-align: block;
+    font-size: 25px;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 15px 20px;
+
+}
+
+.menu li a:hover {
+    background: #ef8354;
+    transition: all 0.6s;
+    color: #fff;
+}
+
+table{
+    width: 95%;
+     
+}
+
+td, th{
+    width: 2%;
+    text-align: left;
+    text-align: center;
+    font-size: 35px;
+}
+
+thead{
+    background-color: gray;
+    color: white;
+}
+
+tbody{
+    background-color: lightskyblue;
+    color: white;
+}
+
+tfoot{
+    background-color: aqua;
+}
+
+#table{
+    color: white;
+}
