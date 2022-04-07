@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="Jesús Pascual Martín" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="html/biografia.html">Biografia</a></li>
+          <li><a href="html/galeria.html">Galeria</a></li>
+          <li><a href="html/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+  
+  <body>
+	<h1>Te explico los Modelos de cajas flexibles</h1>
+	<h3 class="textoblanco">Modelo de cajas tradicional</h3>
+	<section id="contenedorpadre">
+		<div id="cajahijo1">Caja Hijo 1</div>
+	<div id="cajahijo2">Caja Hijo 2</div>
+	<div id="cajahijo3">Caja Hijo 3</div>
+	<div id="cajahijo4">Caja Hijo 4</div>
+	</section>
+	
+	<h3 class="textoblanco">Modelo de cajas flexible con un display:flex sobre el contenedor padre</h3>
+	<section id="contenedorpadre1">
+		<div id="cajahijo11">Caja Hijo 1</div>
+	<div id="cajahijo21">Caja Hijo 2</div>
+	<div id="cajahijo31">Caja Hijo 3</div>
+	<div id="cajahijo41">Caja Hijo 4</div>
+	</section>
+	<h3 class="textoblanco">Modelo de cajas flexible con un display:flex , distribución de los elementos internos al contendor</h3>
+	<p class="textoblanco">Fórmula para calcular el espacio que ocupa cada uno de los elmentos</p>
+	<p class="textoblanco">ancho del contenedor padre x valor de la propiedad flex / suma del valor de la propiedad flex = tamaño de cada elemento</p>
+	<p class="textoblanco">1000px x 1/ 4= 250</p>
+	<section id="contenedorpadre2">
+		<div id="cajahijo12">Caja Hijo 1</div>
+	<div id="cajahijo22">Caja Hijo 2</div>
+	<div id="cajahijo32">Caja Hijo 3</div>
+	<div id="cajahijo42">Caja Hijo 4</div>
+	</section>
+	
+	<h3 class="textoblanco">Modelo de cajas flexible con un display:flex , distribución de los elementos internos al contendor</h3>
+	<h2 class="textoblanco">Un contenedor con un valor superior de flex al resto de contenedores</h2>
+	<p class="textoblanco">Fórmula para calcular el espacio que ocupa cada uno de los elmentos</p>
+	<p class="textoblanco">ancho del contenedor padre x valor de la propiedad flex / suma del valor de la propiedad flex = tamaño de cada elemento</p>
+	<p class="textoblanco">1000px x 2/ 5= 400 calcula el tamaño de la primera caja</p>
+	<p class="textoblanco">1000px x 1/ 5= 200 calcula el tamaño del resto de cajas en el contenedor</p>
+	<section id="contenedorpadre3">
+		<div id="cajahijo13">Caja Hijo 1</div>
+	<div id="cajahijo23">Caja Hijo 2</div>
+	<div id="cajahijo33">Caja Hijo 3</div>
+	<div id="cajahijo43">Caja Hijo 4</div>
+	</section>
+	 
+	 
+	 <h3 class="textoblanco">Modelo de cajas flexible con un display:flex , distribución de los elementos internos al contendor</h3>
+	<h2 class="textoblanco">Una caja Ancho fijo</h2>
+	
+	<section id="contenedorpadre4">
+		<div id="cajahijo14">Caja Hijo 1</div>
+	<div id="cajahijo24">Caja Hijo 2</div>
+	<div id="cajahijo34">Caja Hijo 3</div>
+	<div id="cajahijo44">Caja Hijo 4</div>
+	</section>
+	 <p class="textoblanco">Fórmula para calcular el espacio que ocupa cada uno de los elmentos</p>
+	<p class="textoblanco">(ancho del contenedor padre  - ancho de la caja con tamaño fijo )x valor de la propiedad flex / suma del valor de la propiedad flex = tamaño de cada elemento</p>
+	<p class="textoblanco">(1000px-600px) x 1/ 3= 133.33 calcula el tamaño de la primera caja</p>
+	
+	<p class="textoblanco">flex propiedad que nos permite configurar los valores de </p>
+	 <ul>
+	    <li class="textoblanco">flex-grow: indica cuanto se va a expandir o encoger un elemento</li>
+		<li class="textoblanco">flex-shrink: indica cuanto se va a reducir</li>
+		<li class="textoblanco">flex-basis: indica inicial </li>
+		
+	 </ul>
+	 <h1 class="textoblanco">Otros valores para flex</h1>
+	 <section id="contenedorpadre5">
+		<div id="cajahijo15">Caja Hijo 1</div>
+	<div id="cajahijo25">Caja Hijo 2</div>
+	<div id="cajahijo35">Caja Hijo 3</div>
+	<div id="cajahijo45">Caja Hijo 4</div>
+	</section>
+	
+	
+	<h1 class="textoblanco">flex: flex-grow flex-shrink flex-basis.</h1>
+	 <section id="contenedorpadre6">
+		<div id="cajahijo16">Caja Hijo 1</div>
+	<div id="cajahijo26">Caja Hijo 2</div>
+	<div id="cajahijo36">Caja Hijo 3</div>
+	<div id="cajahijo46">Caja Hijo 4</div>
+	</section>
+	
+	<h1 class="textoblanco">flex: flex-grow flex-shrink flex-basis=auto.</h1>
+	 <section id="contenedorpadre7">
+		<div id="cajahijo17">Caja Hijo 1</div>
+	<div id="cajahijo27">Caja Hijo 2</div>
+	<div id="cajahijo37">Caja Hijo 3</div>
+	<div id="cajahijo47">Caja Hijo 4</div>
+	</section>
+	</body>
 </html>

@@ -1,0 +1,310 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #d8dcb1;
+  background-image: url(../img/Cuadros-caballos.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  }
+}
+
+.menu {
+    list-style: none;
+    background: transparent;
+    width: 90%;
+    max-width: 800px;
+    margin: 15px;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+    text-align: block;
+    font-size: 25px;
+}
+
+.menu li a{
+    display: block;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 15px 20px;
+  
+}
+
+.menu li a:hover{
+    background: #ef8354;
+    transition: all 0.6s;
+}
+
+	/* modelo tradicional*/
+	#contenedorpadre {
+	  border: 2px solid red;
+	  width: 1000px;
+	  margin: 0 auto;
+	}
+
+	#cajahijo1 {
+	  border: 2px solid blue;
+
+	}
+
+	#cajahijo2 {
+	  border: 2px solid blue;
+
+	}
+
+	#cajahijo3 {
+	  border: 2px solid blue;
+
+	}
+
+	#cajahijo4 {
+	  border: 2px solid blue;
+
+	}
+
+	/*modelo de cajas flexibles propiedad display:flex*/
+
+	#contenedorpadre1 {
+	  border: 2px solid red;
+	  width: 1000px;
+	  margin: 0 auto;
+	  display: flex;
+	}
+
+	#cajahijo11 {
+	  border: 2px solid blue;
+
+	}
+
+	#cajahijo21 {
+	  border: 2px solid blue;
+
+	}
+
+	#cajahijo31 {
+	  border: 2px solid blue;
+
+	}
+
+	#cajahijo41 {
+	  border: 2px solid blue;
+
+	}
+
+	/* distribución de los contenedores*/
+	#contenedorpadre2 {
+	  border: 2px solid red;
+	  width: 1000px;
+	  /*ancho del contenedor padre*/
+	  margin: 0 auto;
+	  display: flex;
+	}
+
+	#cajahijo12 {
+	  border: 2px solid blue;
+	  flex: 1;
+	}
+
+	#cajahijo22 {
+	  border: 2px solid blue;
+	  flex: 1;
+	}
+
+	#cajahijo32 {
+	  border: 2px solid blue;
+	  flex: 1;
+	}
+
+	#cajahijo42 {
+	  border: 2px solid blue;
+	  flex: 1
+	}
+
+	/* distribución de cajas de diferente tamaño*/
+	#contenedorpadre3 {
+	  border: 2px solid red;
+	  width: 1000px;
+	  /*ancho del contenedor padre*/
+	  margin: 0 auto;
+	  display: flex;
+	}
+
+	#cajahijo13 {
+	  border: 2px solid blue;
+	  flex: 2;
+	}
+
+	#cajahijo23 {
+	  border: 2px solid blue;
+	  flex: 1;
+	}
+
+	#cajahijo33 {
+	  border: 2px solid blue;
+	  flex: 1;
+	}
+
+	#cajahijo43 {
+	  border: 2px solid blue;
+	  flex: 1
+	}
+
+	/*una de los elementos con un ancho fijo*/
+	#contenedorpadre4 {
+	  border: 2px solid red;
+	  width: 1000px;
+	  /*ancho del contenedor padre*/
+	  margin: 0 auto;
+	  display: flex;
+	}
+
+	#cajahijo14 {
+	  border: 2px solid blue;
+	  width: 600px;
+	}
+
+	#cajahijo24 {
+	  border: 2px solid blue;
+	  flex: 1;
+	}
+
+	#cajahijo34 {
+	  border: 2px solid blue;
+	  flex: 1;
+	}
+
+	#cajahijo44 {
+	  border: 2px solid blue;
+	  flex: 1
+	}
+
+	/**********************otros valores para flex*/
+
+
+	#contenedorpadre5 {
+	  border: 2px solid red;
+	  width: 1000px;
+	  /*ancho del contenedor padre*/
+	  margin: 0 auto;
+	  display: flex;
+	}
+
+	#contenedorpadre5>div {
+	  height: 200px;
+	  margin: 5px;
+	  background-color: #eee;
+	}
+
+
+	#cajahijo15 {
+	  border: 2px solid blue;
+	  width: 600px;
+	}
+
+	#cajahijo25 {
+	  border: 2px solid blue;
+	  flex: 1;
+	}
+
+	#cajahijo35 {
+	  border: 2px solid blue;
+	  flex: 1;
+	}
+
+	#cajahijo45 {
+	  border: 2px solid blue;
+	  flex: 1
+	}
+
+	/* flex: flex-grow flex-shrink flex-basis.*/
+
+	#contenedorpadre6 {
+	  border: 2px solid red;
+	  width: 1000px;
+	  /*ancho del contenedor padre*/
+	  margin: 0 auto;
+	  display: flex;
+	}
+
+	#contenedorpadre6>div {
+	  height: 200px;
+	  margin: 5px;
+	  background-color: #eee;
+	}
+
+
+	#cajahijo16 {
+	  border: 2px solid blue;
+	  flex: 1 1 300px;
+	}
+
+	#cajahijo26 {
+	  border: 2px solid blue;
+	  flex: 1 5 150px;
+	}
+
+	#cajahijo36 {
+	  border: 2px solid blue;
+	  flex: 1 5 150px;
+	}
+
+	#cajahijo46 {
+	  border: 2px solid blue;
+	  flex: 1 5 150px;
+	}
+
+	/*************aplicando la propiedad flex-basis auto*****************/
+
+	#contenedorpadre7 {
+	  border: 2px solid red;
+	  width: 1000px;
+	  /*ancho del contenedor padre*/
+	  margin: 0 auto;
+	  display: flex;
+	}
+
+	#contenedorpadre7>div {
+	  height: 200px;
+	  margin: 5px;
+	  background-color: #eee;
+	}
+
+
+	#cajahijo17 {
+	  border: 2px solid blue;
+	  width: 300px;
+	  flex: 1 1 auto;
+	}
+
+	#cajahijo27 {
+	  border: 2px solid blue;
+	  width: 200px;
+	  flex: 1 1 auto;
+	}
+
+	#cajahijo37 {
+	  border: 2px solid blue;
+	  width: 200px;
+	  flex: 1 1 auto;
+	}
+
+	#cajahijo47 {
+	  border: 2px solid blue;
+	  width: 200px;
+	  flex: 1 1 auto;
+	}
+
+	.textoblanco {
+		color: white;
+		
+	}
